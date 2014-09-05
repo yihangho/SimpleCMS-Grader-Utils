@@ -9,6 +9,17 @@ module GraderUtils
     input.to_f
   end
 
+  def self.parse_boolean(input)
+    input = parse_string(input).downcase
+    if input == "true"
+      true
+    elsif input == "false"
+      false
+    else
+      nil
+    end
+  end
+
   def self.parse_string(input)
     input = input.to_s.strip
 
