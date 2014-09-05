@@ -7,4 +7,6 @@ Gem::Specification.new do |s|
   s.email   = 'hoyihang5@gmail.com'
   s.files   = ['lib/grader-utils.rb']
   s.license = 'MIT'
+
+  s.add_development_dependency('rake')
 end
