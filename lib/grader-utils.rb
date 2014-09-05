@@ -32,4 +32,14 @@ module GraderUtils
       input
     end
   end
+
+  def self.parse_array(input)
+    input = input.to_s.strip
+
+    if input[0] == "[" && input[-1] == "]"
+      input = input[1..-2]
+    end
+
+    input.split(',').map(&:strip)
+  end
 end
